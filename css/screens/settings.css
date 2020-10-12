@@ -6,6 +6,19 @@
   align-items: center;
   justify-content: space-between;
 }
+.settings-list li:last-child {
+  border-bottom: none;
+  padding-bottom: 50px;
+}
+
+.settings__line {
+  left: 0;
+  right: 0;
+  top: 320px;
+  position: fixed;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
 
 .settings__setting i {
   margin-right: 20px;
@@ -15,4 +28,21 @@
 
 .settings__setting__column:last-child {
   color: var(--grey);
+}
+
+.settings__setting .settings__new {
+  display: flex;
+}
+.settings__setting .new--read {
+  margin-left: 10px;
+  background-color: tomato;
+  color: white;
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  font-size: 11px;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
